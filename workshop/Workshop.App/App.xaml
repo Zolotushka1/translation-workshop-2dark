@@ -1,0 +1,38 @@
+<Application x:Class="Workshop.App.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Application.Resources>
+    <SolidColorBrush x:Key="Canvas" Color="#15191F"/>
+    <SolidColorBrush x:Key="Panel" Color="#20262E"/>
+    <SolidColorBrush x:Key="Input" Color="#11161C"/>
+    <SolidColorBrush x:Key="Line" Color="#39424E"/>
+    <SolidColorBrush x:Key="Text" Color="#E8EDF2"/>
+    <SolidColorBrush x:Key="Muted" Color="#A6B2BF"/>
+    <SolidColorBrush x:Key="Accent" Color="#84C7B0"/>
+    <Style TargetType="Window"><Setter Property="FontFamily" Value="Segoe UI"/><Setter Property="FontSize" Value="13"/><Setter Property="Background" Value="{StaticResource Canvas}"/><Setter Property="Foreground" Value="{StaticResource Text}"/></Style>
+    <Style TargetType="TextBlock"><Setter Property="Foreground" Value="{StaticResource Text}"/><Setter Property="TextWrapping" Value="Wrap"/></Style>
+    <Style TargetType="Button">
+      <Setter Property="Background" Value="{StaticResource Panel}"/><Setter Property="Foreground" Value="{StaticResource Text}"/><Setter Property="BorderBrush" Value="{StaticResource Line}"/>
+      <Setter Property="Padding" Value="12,7"/><Setter Property="Margin" Value="3"/><Setter Property="Cursor" Value="Hand"/>
+      <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Button"><Border x:Name="B" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="4" Padding="{TemplateBinding Padding}"><ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/></Border><ControlTemplate.Triggers><Trigger Property="IsMouseOver" Value="True"><Setter TargetName="B" Property="BorderBrush" Value="{StaticResource Accent}"/></Trigger><Trigger Property="IsEnabled" Value="False"><Setter TargetName="B" Property="Opacity" Value="0.4"/></Trigger></ControlTemplate.Triggers></ControlTemplate></Setter.Value></Setter>
+    </Style>
+    <Style TargetType="TextBox"><Setter Property="Background" Value="{StaticResource Input}"/><Setter Property="Foreground" Value="{StaticResource Text}"/><Setter Property="CaretBrush" Value="{StaticResource Text}"/><Setter Property="BorderBrush" Value="{StaticResource Line}"/><Setter Property="Padding" Value="9"/><Setter Property="SelectionBrush" Value="#436D61"/><Setter Property="VerticalContentAlignment" Value="Center"/></Style>
+    <Style TargetType="ComboBox"><Setter Property="Padding" Value="7"/><Setter Property="Margin" Value="0,4"/><Setter Property="Foreground" Value="{StaticResource Text}"/><Setter Property="MinWidth" Value="90"/>
+      <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="ComboBox"><Grid>
+        <ToggleButton Focusable="False" IsChecked="{Binding IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}">
+          <ToggleButton.Template><ControlTemplate TargetType="ToggleButton"><Border Background="{StaticResource Panel}" BorderBrush="{StaticResource Line}" BorderThickness="1" CornerRadius="3"><TextBlock Text="▾" HorizontalAlignment="Right" Margin="7"/></Border></ControlTemplate></ToggleButton.Template>
+        </ToggleButton>
+        <ContentPresenter Content="{TemplateBinding SelectionBoxItem}" ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" Margin="9,7,24,7" IsHitTestVisible="False"/>
+        <Popup x:Name="PART_Popup" IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom" AllowsTransparency="True" Focusable="False" PopupAnimation="Slide">
+          <Border Background="{StaticResource Panel}" BorderBrush="{StaticResource Line}" BorderThickness="1" MinWidth="{Binding ActualWidth, RelativeSource={RelativeSource TemplatedParent}}"><ScrollViewer MaxHeight="360"><ItemsPresenter/></ScrollViewer></Border>
+        </Popup>
+      </Grid></ControlTemplate></Setter.Value></Setter>
+    </Style>
+    <Style TargetType="ComboBoxItem"><Setter Property="Foreground" Value="{StaticResource Text}"/><Setter Property="Padding" Value="9,6"/><Setter Property="Template"><Setter.Value><ControlTemplate TargetType="ComboBoxItem"><Border x:Name="B" Padding="{TemplateBinding Padding}" Background="{StaticResource Panel}"><ContentPresenter/></Border><ControlTemplate.Triggers><Trigger Property="IsHighlighted" Value="True"><Setter TargetName="B" Property="Background" Value="#2C4A40"/></Trigger></ControlTemplate.Triggers></ControlTemplate></Setter.Value></Setter></Style>
+    <Style TargetType="CheckBox"><Setter Property="Foreground" Value="{StaticResource Text}"/><Setter Property="Margin" Value="6"/><Setter Property="VerticalContentAlignment" Value="Center"/></Style>
+    <Style TargetType="ListBox"><Setter Property="Background" Value="{StaticResource Input}"/><Setter Property="Foreground" Value="{StaticResource Text}"/><Setter Property="BorderThickness" Value="0"/><Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/><Setter Property="VirtualizingPanel.IsVirtualizing" Value="True"/><Setter Property="VirtualizingPanel.VirtualizationMode" Value="Recycling"/></Style>
+    <Style TargetType="ListBoxItem"><Setter Property="Padding" Value="8"/><Setter Property="HorizontalContentAlignment" Value="Stretch"/><Setter Property="Foreground" Value="{StaticResource Text}"/><Setter Property="Template"><Setter.Value><ControlTemplate TargetType="ListBoxItem"><Border x:Name="B" Background="Transparent" Padding="{TemplateBinding Padding}" BorderThickness="0,0,0,1" BorderBrush="#252D36"><ContentPresenter/></Border><ControlTemplate.Triggers><Trigger Property="IsSelected" Value="True"><Setter TargetName="B" Property="Background" Value="#2C4A40"/></Trigger><Trigger Property="IsMouseOver" Value="True"><Setter TargetName="B" Property="BorderBrush" Value="{StaticResource Accent}"/></Trigger></ControlTemplate.Triggers></ControlTemplate></Setter.Value></Setter></Style>
+    <Style TargetType="TabControl"><Setter Property="Background" Value="{StaticResource Panel}"/><Setter Property="BorderBrush" Value="{StaticResource Line}"/><Setter Property="Padding" Value="8"/></Style>
+    <Style TargetType="TabItem"><Setter Property="Padding" Value="13,6"/><Setter Property="Foreground" Value="{StaticResource Text}"/><Setter Property="Template"><Setter.Value><ControlTemplate TargetType="TabItem"><Border x:Name="B" Background="{StaticResource Canvas}" Padding="{TemplateBinding Padding}" BorderBrush="{StaticResource Line}" BorderThickness="1,1,1,0"><ContentPresenter ContentSource="Header"/></Border><ControlTemplate.Triggers><Trigger Property="IsSelected" Value="True"><Setter TargetName="B" Property="Background" Value="{StaticResource Panel}"/><Setter TargetName="B" Property="BorderBrush" Value="{StaticResource Accent}"/></Trigger></ControlTemplate.Triggers></ControlTemplate></Setter.Value></Setter></Style>
+    <Style TargetType="GridSplitter"><Setter Property="Background" Value="{StaticResource Canvas}"/></Style>
+    <Style TargetType="Expander"><Setter Property="Foreground" Value="{StaticResource Text}"/></Style>
+  </Application.Resources>
+</Application>

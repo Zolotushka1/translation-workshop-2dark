@@ -1,0 +1,57 @@
+[
+  {
+    "file": "Bar/levels/Bar/Bar_texts.en.txt",
+    "records": 117,
+    "words": 962
+  },
+  {
+    "file": "Circus/levels/Circus/Circus_texts.en.txt",
+    "records": 143,
+    "words": 1217
+  },
+  {
+    "file": "Clinic/levels/Clinic/Clinic_texts.en.txt",
+    "records": 179,
+    "words": 1723
+  },
+  {
+    "file": "Doggy/levels/Doggy/Doggy_texts.en.txt",
+    "records": 215,
+    "words": 2418
+  },
+  {
+    "file": "Forest/levels/Forest/Forest_texts.en.txt",
+    "records": 34,
+    "words": 97
+  },
+  {
+    "file": "global/texts/2dark.en.txt",
+    "records": 669,
+    "words": 5751
+  },
+  {
+    "file": "global/texts/2dark_documents_texts.en.txt",
+    "records": 256,
+    "words": 2747
+  },
+  {
+    "file": "Krach/levels/Krach/Krach_texts.en.txt",
+    "records": 403,
+    "words": 4179
+  },
+  {
+    "file": "Normann/levels/Normann/Normann_texts.en.txt",
+    "records": 158,
+    "words": 1150
+  },
+  {
+    "file": "Office/levels/Office/Office_texts.en.txt",
+    "records": 314,
+    "words": 3058
+  },
+  {
+    "file": "Scarlett/levels/Scarlett/Scarlett_texts.en.txt",
+    "records": 346,
+    "words": 3840
+  }
+]

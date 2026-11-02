@@ -1,0 +1,36 @@
+'============= Cinématique d'intro ============
+Welcome=13 июня, 1969 года,{CR} Парк Сайлент Маунт - Глумивуд NN857
+Martin_ByeDad=Но я хочу остаться с папооой!!
+Sandra_ByeDad= 
+Kids_Shout=Ииик!!! Пааапа!
+Smith_1=Отойдите от огня, дети!
+Helen_1=Слушайтесь своего отца!
+Helen_2_1=Они должны направлять свою энергию в нужное русло...
+Helen_2_2=Мы сходим за древесиной!
+Smith_2=Хорошо, дорогая, спасибо.{CR} Я закончу ставить палатку!
+Helen_3_1=Дети, за мной!
+Helen_3_2=Мы пойдем собирать дрова для костра!
+Helen_4=Оставь отца в покое и{CR}помоги своей сестре!
+Smith_Tent_1_1=Ёбанная палатка!
+Smith_Tent_1_2=Ёбанные колья!
+Smith_Tent_1_3=Ёбанный продавец!
+Smith_Tent_2=И ёбанный лагерь!!!
+Helen_Shout=Ааааааааааааахх!!!
+Smith_Surprise=?!?!
+Smith_Helen_1=Хелен?
+Smith_Helen_2=Хелен!?!
+Smith_Helen_3_1=
+Smith_Helen_3_2=
+Smith_Helen_3_3=
+Smith_Helen_3_4=
+Smith_Helen_3_5=
+Smith_NoNoNo1=О… Неееет!
+Smith_NoNoNo2=Хелен? Нет! Нет!
+Smith_NoNoNo3=Неееет!
+Smith_Sobbing=. . .
+Smith_Kids1=Сандра? Мартин?
+Smith_Kids2=Сандра…? Мартин!?!
+Smith_Kids3=Нет! Нет! Только не мои дети...
+Smith_Kids4=. . .
+End1=Семь лет спустя.
+

@@ -1,0 +1,67 @@
+[
+  {
+    "path": "2Dark.exe",
+    "size": 5503488,
+    "sha256": "b4f82c4bc414d5e88ae231b4da9b066579ae9945cfb773d79ee96b651b837a73"
+  },
+  {
+    "path": "data/global.bigfile",
+    "size": 866563,
+    "sha256": "16ed2b3e34add9d97d498ee62a1180e0353307d9d03e0402dab8dfad77d3124d"
+  },
+  {
+    "path": "data/levels/Bar/Bar.bigfile",
+    "size": 1058823,
+    "sha256": "b6e7833e5814e6cde96a4be292d8a0e23e62fb9583578fdee520462be8117d3f"
+  },
+  {
+    "path": "data/levels/Circus/Circus.bigfile",
+    "size": 4277354,
+    "sha256": "ae2f795f0c602a633993e440185c0528871cfe13a30f584f4c0b7a6281fa8d1d"
+  },
+  {
+    "path": "data/levels/Clinic/Clinic.bigfile",
+    "size": 4344483,
+    "sha256": "890635d88c92a25654554cf422faee62259f960eba78588a87dedfc132f4b5af"
+  },
+  {
+    "path": "data/levels/Doggy/Doggy.bigfile",
+    "size": 4485005,
+    "sha256": "8383df58fe50c3db871705be97c54935f53b2ee021c14377403f6978beaa93cb"
+  },
+  {
+    "path": "data/levels/Forest/Forest.bigfile",
+    "size": 974087,
+    "sha256": "13c72a193b872e936394ef15095ac4e8b856ce18a998677eeeafb2a709751705"
+  },
+  {
+    "path": "data/levels/Krach/Krach.bigfile",
+    "size": 4474191,
+    "sha256": "471cfc6e97bdf4c9d1971e4a542f3d72d6f5f2cbc3f887879abf87c559fcc97c"
+  },
+  {
+    "path": "data/levels/Normann/Normann.bigfile",
+    "size": 4978818,
+    "sha256": "7cf261be9e98a59af8f03df404a7bf0c60ce39dbcd90d2ee5ec5c701ba3ad04d"
+  },
+  {
+    "path": "data/levels/Office/Office.bigfile",
+    "size": 1291059,
+    "sha256": "1c1c4a6bec36d04dd9b64893a475570b724dc6d3ad4d976160870de5a3605809"
+  },
+  {
+    "path": "data/levels/Office/Office2.bigfile",
+    "size": 1161813,
+    "sha256": "afe4c2bc379224a923e75a487fb678926ce35f8d6ca75bf52939109081ba8c1d"
+  },
+  {
+    "path": "data/levels/Office/Office3.bigfile",
+    "size": 1165931,
+    "sha256": "274135f15996187cf8c74ca8fe535559c233f2dbcd637eb346029a2a4a12f964"
+  },
+  {
+    "path": "data/levels/Scarlett/Scarlett.bigfile",
+    "size": 5758999,
+    "sha256": "615957f74a72852333ab11820d4b44f7de16848575e8755a3796d167e59ba902"
+  }
+]
